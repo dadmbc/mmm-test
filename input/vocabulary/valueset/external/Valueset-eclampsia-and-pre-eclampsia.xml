@@ -1,0 +1,276 @@
+<ValueSet>
+  <id value="2.16.840.1.113762.1.4.1221.88"/>
+  <meta>
+    <versionId value="6"/>
+    <lastUpdated value="2020-06-24T01:00:22.000-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div
+      xmlns="http://www.w3.org/1999/xhtml">
+      <h3>Value Set Contents</h3>
+      <p>This value set contains 19 concepts</p>
+      <p>All codes from system 
+        <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+      </p>
+      <table class="codes">
+        <tr>
+          <td style="white-space:nowrap">
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-A18.84"/>A18.84
+          </td>
+          <td>Tuberculosis of heart</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-A36.81"/>A36.81
+          </td>
+          <td>Diphtheritic cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-B33.24"/>B33.24
+          </td>
+          <td>Viral cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-E85.4"/>E85.4
+          </td>
+          <td>Organ-limited amyloidosis</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I25.5"/>I25.5
+          </td>
+          <td>Ischemic cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42"/>I42
+          </td>
+          <td>Cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.0"/>I42.0
+          </td>
+          <td>Dilated cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.1"/>I42.1
+          </td>
+          <td>Obstructive hypertrophic cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.2"/>I42.2
+          </td>
+          <td>Other hypertrophic cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.3"/>I42.3
+          </td>
+          <td>Endomyocardial (eosinophilic) disease</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.4"/>I42.4
+          </td>
+          <td>Endocardial fibroelastosis</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.5"/>I42.5
+          </td>
+          <td>Other restrictive cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.6"/>I42.6
+          </td>
+          <td>Alcoholic cardiomyopathy</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.7"/>I42.7
+          </td>
+          <td>Cardiomyopathy due to drug and external agent</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.8"/>I42.8
+          </td>
+          <td>Other cardiomyopathies</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I42.9"/>I42.9
+          </td>
+          <td>Cardiomyopathy, unspecified</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I43"/>I43
+          </td>
+          <td>Cardiomyopathy in diseases classified elsewhere</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-I51.81"/>I51.81
+          </td>
+          <td>Takotsubo syndrome</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">
+            <a name="http---hl7.org-fhir-sid-icd-10-cm-O90.3"/>O90.3
+          </td>
+          <td>Peripartum cardiomyopathy</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <url value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1221.88"/>
+  <version value="20200624"/>
+  <name value="Preeclampsia and Eclampsia"/>
+  <status value="active"/>
+  <date value="2020-06-24T01:00:22-04:00"/>
+  <publisher value="NACHC Steward"/>
+  <expansion>
+    <identifier value="urn:uuid:ac3e27f7-8d7c-4bcc-b662-0accf2d4f896"/>
+    <timestamp value="2021-11-03T09:25:47-04:00"/>
+    <total value="19"/>
+    <offset value="0"/>
+    <parameter>
+      <name value="count"/>
+      <valueInteger value="1000"/>
+    </parameter>
+    <parameter>
+      <name value="offset"/>
+      <valueInteger value="0"/>
+    </parameter>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="A18.84"/>
+      <display value="Tuberculosis of heart"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="A36.81"/>
+      <display value="Diphtheritic cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="B33.24"/>
+      <display value="Viral cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="E85.4"/>
+      <display value="Organ-limited amyloidosis"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I25.5"/>
+      <display value="Ischemic cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42"/>
+      <display value="Cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.0"/>
+      <display value="Dilated cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.1"/>
+      <display value="Obstructive hypertrophic cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.2"/>
+      <display value="Other hypertrophic cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.3"/>
+      <display value="Endomyocardial (eosinophilic) disease"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.4"/>
+      <display value="Endocardial fibroelastosis"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.5"/>
+      <display value="Other restrictive cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.6"/>
+      <display value="Alcoholic cardiomyopathy"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.7"/>
+      <display value="Cardiomyopathy due to drug and external agent"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.8"/>
+      <display value="Other cardiomyopathies"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I42.9"/>
+      <display value="Cardiomyopathy, unspecified"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I43"/>
+      <display value="Cardiomyopathy in diseases classified elsewhere"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="I51.81"/>
+      <display value="Takotsubo syndrome"/>
+    </contains>
+    <contains>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <version value="2022"/>
+      <code value="O90.3"/>
+      <display value="Peripartum cardiomyopathy"/>
+    </contains>
+  </expansion>
+</ValueSet>

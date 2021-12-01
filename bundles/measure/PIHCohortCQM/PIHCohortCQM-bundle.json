@@ -1,0 +1,1548 @@
+{
+  "resourceType": "Bundle",
+  "id": "PIHCohort",
+  "identifier": {
+    "system": "https://nihmeasures.org",
+    "value": "pihcohort"
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/Measure/PIHCohort",
+      "resource": {
+        "resourceType": "Measure",
+        "id": "PIHCohort",
+        "url": "http://www.hl7.org/fhir/us/mihr/Measure/PIHCohort",
+        "identifier": [
+          {
+            "system": "https://nihmeasures.gov",
+            "value": "pihcohort"
+          }
+        ],
+        "version": "0.0.01",
+        "name": "PIHCohort",
+        "title": "PIH Cohort",
+        "description": "Mothers diagnosed with PIH that have a subsequent pregnancy.",
+        "purpose": "Unknown",
+        "copyright": "Limited proprietary coding is contained in the measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets. Lantana disclaims all liability for use or accuracy of any third party codes contained in the specifications.\n\nCPT(R) contained in the measure specifications is copyright 2004-2020 American Medical Association. LOINC(R) copyright 2004-2020 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2020 International Health Terminology Standards Development Organisation. ICD-10 copyright 2020 World Health Organization. All Rights Reserved.",
+        "effectivePeriod": {
+          "start": "2021-01-01",
+          "end": "2021-12-31"
+        },
+        "library": [
+          "http://www.hl7.org/fhir/us/mihr/Library/PIHCohort",
+          "http://www.hl7.org/fhir/us/mihr/Library/FHIRHelpers"
+        ],
+        "disclaimer": "These performance measures are not clinical guidelines, do not establish a standard of medical care, and have not been tested for all potential applications. \n\nTHE MEASURES AND SPECIFICATION ARE PROVIDED ?AS IS? WITHOUT WARRANTY OF ANY KIND. \n\nDue to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].",
+        "scoring": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+              "code": "cohort",
+              "display": "Cohort"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+                "code": "process",
+                "display": "Process"
+              }
+            ]
+          }
+        ],
+        "group": [
+          {
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population",
+                      "display": "Initial Population"
+                    }
+                  ]
+                },
+                "criteria": {
+                  "language": "text/cql.identifier",
+                  "expression": "Initial Population"
+                }
+              }
+            ]
+          }
+        ],
+        "supplementalData": [
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Allergy Intolerance"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE BMI"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Blood Pressure"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Height"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Body Temperature"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Body Weight"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Body Weight"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Care Plan"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Care Team"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Conditions"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Diagnostic Report"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Document Reference"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Encounter"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Goal"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Head Circumference"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Heart Rate"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Immunization"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Device"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Lab Observation"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Location"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Medication"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Medication Request"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Organization"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Patient"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Pediatric BMI"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Occipital Frontal Head Circumference"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Pediatric Weight for Height"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Practitioner"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Practitioner Role"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Procedure"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Provenance"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Oximetry"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Respiratory Rate"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Smoking Status"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Vital Signs"
+            }
+          },
+          {
+            "usage": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+                    "code": "supplemental-data"
+                  }
+                ]
+              }
+            ],
+            "criteria": {
+              "language": "text/cql.identifier",
+              "expression": "SDE Related Person"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/Library/PIHCohort",
+      "resource": {
+        "resourceType": "Library",
+        "id": "PIHCohort",
+        "url": "http://www.hl7.org/fhir/us/mihr/Library/PIHCohort",
+        "version": "0.0.01",
+        "name": "PIHCohort",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "logic-library"
+            }
+          ]
+        },
+        "relatedArtifact": [
+          {
+            "type": "depends-on",
+            "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-eclampsia-mmm-SNOMED"
+          },
+          {
+            "type": "depends-on",
+            "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-eclampsia-mmm-ICD"
+          },
+          {
+            "type": "depends-on",
+            "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-chronic-hypertension-mmm-ICD"
+          },
+          {
+            "type": "depends-on",
+            "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-chronic-hypertension-mmm-SNOMED"
+          },
+          {
+            "type": "depends-on",
+            "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-induced-hypertension-mmm-SNOMED"
+          },
+          {
+            "type": "depends-on",
+            "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-induced-hypertension-mmm-ICD"
+          }
+        ],
+        "content": [
+          {
+            "contentType": "text/cql",
+            "data": "bGlicmFyeSBQSUhDb2hvcnQgdmVyc2lvbiAnMC4wLjAxJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjAwMScgY2FsbGVkIEZISVJIZWxwZXJzCgpjb2Rlc3lzdGVtICJTTk9NRURDVCI6ICdodHRwOi8vc25vbWVkLmluZm8vc2N0JwoKdmFsdWVzZXQgIkVjbGFtcHNpYSBTTk9NRUQiOiAnaHR0cDovL3d3dy5obDcub3JnL2ZoaXIvdXMvbWloci9WYWx1ZVNldC9wcmVnbmFuY3ktZWNsYW1wc2lhLW1tbS1TTk9NRUQnCnZhbHVlc2V0ICJFY2xhbXBzaWEgSUNEIjogJ2h0dHA6Ly93d3cuaGw3Lm9yZy9maGlyL3VzL21paHIvVmFsdWVTZXQvcHJlZ25hbmN5LWVjbGFtcHNpYS1tbW0tSUNEJwp2YWx1ZXNldCAiQ2hyb25pYyBIeXBlcnRlbnNpb24gU05PTUVEIjogJ2h0dHA6Ly93d3cuaGw3Lm9yZy9maGlyL3VzL21paHIvVmFsdWVTZXQvcHJlZ25hbmN5LWNocm9uaWMtaHlwZXJ0ZW5zaW9uLW1tbS1TTk9NRUQnCnZhbHVlc2V0ICJDaHJvbmljIEh5cGVydGVuc2lvbiBJQ0QiOiAnaHR0cDovL3d3dy5obDcub3JnL2ZoaXIvdXMvbWloci9WYWx1ZVNldC9wcmVnbmFuY3ktY2hyb25pYy1oeXBlcnRlbnNpb24tbW1tLUlDRCcKdmFsdWVzZXQgIkluZHVjZWQgSHlwZXJ0ZW5zaW9uIFNOT01FRCI6ICdodHRwOi8vd3d3LmhsNy5vcmcvZmhpci91cy9taWhyL1ZhbHVlU2V0L3ByZWduYW5jeS1pbmR1Y2VkLWh5cGVydGVuc2lvbi1tbW0tU05PTUVEJwp2YWx1ZXNldCAiSW5kdWNlZCBIeXBlcnRlbnNpb24gSUNEIjogJ2h0dHA6Ly93d3cuaGw3Lm9yZy9maGlyL3VzL21paHIvVmFsdWVTZXQvcHJlZ25hbmN5LWluZHVjZWQtaHlwZXJ0ZW5zaW9uLW1tbS1JQ0QnCgoKcGFyYW1ldGVyICJNZWFzdXJlbWVudCBQZXJpb2QiIEludGVydmFsPERhdGVUaW1lPgoKY29udGV4dCBQYXRpZW50CgpkZWZpbmUgIlBJSCBDb25kaXRpb25zIjoKCVtDb25kaXRpb246ICJFY2xhbXBzaWEgU05PTUVEIl0KCXVuaW9uIFtDb25kaXRpb246ICJFY2xhbXBzaWEgSUNEIl0KCXVuaW9uIFtDb25kaXRpb246ICJDaHJvbmljIEh5cGVydGVuc2lvbiBTTk9NRUQiXQoJdW5pb24gW0NvbmRpdGlvbjogIkNocm9uaWMgSHlwZXJ0ZW5zaW9uIElDRCJdCgl1bmlvbiBbQ29uZGl0aW9uOiAiSW5kdWNlZCBIeXBlcnRlbnNpb24gU05PTUVEIl0KCXVuaW9uIFtDb25kaXRpb246ICJJbmR1Y2VkIEh5cGVydGVuc2lvbiBJQ0QiXQogICAgCQoKZGVmaW5lICJJbml0aWFsIFBvcHVsYXRpb24iOgoJZXhpc3RzKCJQSUggQ29uZGl0aW9ucyIpCgpkZWZpbmUgIlNERSBSZWxhdGVkIFBlcnNvbiI6CglbUmVsYXRlZFBlcnNvbl0KCmRlZmluZSAiU0RFIEFsbGVyZ3kgSW50b2xlcmFuY2UiOgoJW0FsbGVyZ3lJbnRvbGVyYW5jZV0KCmRlZmluZSAiU0RFIEJNSSI6CglbT2JzZXJ2YXRpb246IGNvZGUgfiAnMzkxNTYtNSddCgpkZWZpbmUgIlNERSBCbG9vZCBQcmVzc3VyZSI6CglbT2JzZXJ2YXRpb246IGNvZGUgfiAnODUzNTQtOSddCgpkZWZpbmUgIlNERSBIZWlnaHQiOgoJW09ic2VydmF0aW9uOiBjb2RlIH4gJzgzMDItMiddCgpkZWZpbmUgIlNERSBCb2R5IFRlbXBlcmF0dXJlIjoKCVtPYnNlcnZhdGlvbjogY29kZSB+ICc4MzEwLTUnXQoKZGVmaW5lICJTREUgQm9keSBXZWlnaHQiOgoJW09ic2VydmF0aW9uOiBjb2RlIH4gJzI5NDYzLTcnXQoKZGVmaW5lICJTREUgQ2FyZSBQbGFuIjoKCVtDYXJlUGxhbl0KCmRlZmluZSAiU0RFIENhcmUgVGVhbSI6CglbQ2FyZVRlYW1dCgpkZWZpbmUgIlNERSBDb25kaXRpb25zIjoKCVtDb25kaXRpb25dCgovL1VTQ29yZSBzdWdnZXN0cyB0aGF0IHRoZXJlJ3MgdHdvIGRpZmZlcmVudCBEaWFnbm9zdGljIFJlcG9ydCBwcm9maWxlcyB0aGF0IG5lZWQgdG8gYmUgY2F1Z2h0IGJ1dAovL2l0IGJvaWxzIGRvd24gdG8ganVzdCBjYXRjaGluZyBhbGwgRGlhZ25vc3RpYyBSZXBvcnRzCmRlZmluZSAiU0RFIERpYWdub3N0aWMgUmVwb3J0IjoKCVtEaWFnbm9zdGljUmVwb3J0XQoKZGVmaW5lICJTREUgRG9jdW1lbnQgUmVmZXJlbmNlIjoKCVtEb2N1bWVudFJlZmVyZW5jZV0KCmRlZmluZSAiU0RFIEVuY291bnRlciI6CglbRW5jb3VudGVyXQoKZGVmaW5lICJTREUgR29hbCI6CglbR29hbF0KCmRlZmluZSAiU0RFIEhlYWQgQ2lyY3VtZmVyZW5jZSI6CglbT2JzZXJ2YXRpb246IGNvZGUgfiAnOTg0My00J10KCmRlZmluZSAiU0RFIEhlYXJ0IFJhdGUiOgoJW09ic2VydmF0aW9uOiBjb2RlIH4gJzg4NjctNCddCgpkZWZpbmUgIlNERSBJbW11bml6YXRpb24iOgoJW0ltbXVuaXphdGlvbl0KCmRlZmluZSAiU0RFIERldmljZSI6CglbRGV2aWNlXQoKZGVmaW5lICJTREUgTGFiIE9ic2VydmF0aW9uIjoKCVtPYnNlcnZhdGlvbjogY2F0ZWdvcnkgfiAnbGFib3JhdG9yeSddCgpkZWZpbmUgIlNERSBMb2NhdGlvbiI6CglbTG9jYXRpb25dCgpkZWZpbmUgIlNERSBNZWRpY2F0aW9uIjoKCVtNZWRpY2F0aW9uXQoKZGVmaW5lICJTREUgTWVkaWNhdGlvbiBSZXF1ZXN0IjoKCVtNZWRpY2F0aW9uUmVxdWVzdF0KCmRlZmluZSAiU0RFIE9yZ2FuaXphdGlvbiI6CglbT3JnYW5pemF0aW9uXQoKZGVmaW5lICJTREUgUGF0aWVudCI6CglbUGF0aWVudF0KCmRlZmluZSAiU0RFIFBlZGlhdHJpYyBCTUkiOgoJW09ic2VydmF0aW9uOiBjb2RlIH4gJzU5NTc2LTknXQoKZGVmaW5lICJTREUgT2NjaXBpdGFsIEZyb250YWwgSGVhZCBDaXJjdW1mZXJlbmNlIjoKCVtPYnNlcnZhdGlvbjogY29kZSB+ICc4Mjg5LTEnXQoKZGVmaW5lICJTREUgUGVkaWF0cmljIFdlaWdodCBmb3IgSGVpZ2h0IjoKCVtPYnNlcnZhdGlvbjogY29kZSB+ICc3NzYwNi0yJ10KCmRlZmluZSAiU0RFIFByYWN0aXRpb25lciI6CglbUHJhY3RpdGlvbmVyXQoKZGVmaW5lICJTREUgUHJhY3RpdGlvbmVyIFJvbGUiOgoJW1ByYWN0aXRpb25lclJvbGVdCgpkZWZpbmUgIlNERSBQcm9jZWR1cmUiOgoJW1Byb2NlZHVyZV0KCmRlZmluZSAiU0RFIFByb3ZlbmFuY2UiOgoJW1Byb3ZlbmFuY2VdCgpkZWZpbmUgIlNERSBPeGltZXRyeSI6CglbT2JzZXJ2YXRpb246IGNvZGUgfiAnMjcwOC02J10KCmRlZmluZSAiU0RFIFJlc3BpcmF0b3J5IFJhdGUiOgoJW09ic2VydmF0aW9uOiBjb2RlIH4gJzkyNzktMSddCgpkZWZpbmUgIlNERSBTbW9raW5nIFN0YXR1cyI6CiAgICBbT2JzZXJ2YXRpb246IGNhdGVnb3J5IH4gJ3NvY2lhbC1oaXN0b3J5J10KCmRlZmluZSAiU0RFIFZpdGFsIFNpZ25zIjoKCVtPYnNlcnZhdGlvbjogY2F0ZWdvcnkgfiAndml0YWwtc2lnbnMnXQoKCi8qKgoqICAgIENRRk1lYXN1cmVzIENvbW1vbiBMb2dpYwoqKi8KZGVmaW5lIGZ1bmN0aW9uICJOb3JtYWxpemUgSW50ZXJ2YWwiKGNob2ljZSBDaG9pY2U8RkhJUi5kYXRlVGltZSwgRkhJUi5QZXJpb2QsIEZISVIuVGltaW5nLCBGSElSLmluc3RhbnQsIEZISVIuc3RyaW5nLCBGSElSLkFnZSwgRkhJUi5SYW5nZT4gKToKICBjYXNlCiAgCSAgd2hlbiBjaG9pY2UgaXMgRkhJUi5kYXRlVGltZSB0aGVuCiAgICAJSW50ZXJ2YWxbRkhJUkhlbHBlcnMuVG9EYXRlVGltZShjaG9pY2UgYXMgRkhJUi5kYXRlVGltZSksIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoY2hvaWNlIGFzIEZISVIuZGF0ZVRpbWUpXQogIAkJd2hlbiBjaG9pY2UgaXMgRkhJUi5QZXJpb2QgdGhlbgogIAkJRkhJUkhlbHBlcnMuVG9JbnRlcnZhbChjaG9pY2UgYXMgRkhJUi5QZXJpb2QpCiAgCQl3aGVuIGNob2ljZSBpcyBGSElSLmluc3RhbnQgdGhlbgogIAkJCUludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoY2hvaWNlIGFzIEZISVIuaW5zdGFudCksIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoY2hvaWNlIGFzIEZISVIuaW5zdGFudCldCiAgCQl3aGVuIGNob2ljZSBpcyBGSElSLkFnZSB0aGVuCiAgCQkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KGNob2ljZSBhcyBGSElSLkFnZSksCiAgCQkJICBGSElSSGVscGVycy5Ub0RhdGUoUGF0aWVudC5iaXJ0aERhdGUpICsgRkhJUkhlbHBlcnMuVG9RdWFudGl0eShjaG9pY2UgYXMgRkhJUi5BZ2UpICsgMSB5ZWFyKQogIAkJd2hlbiBjaG9pY2UgaXMgRkhJUi5SYW5nZSB0aGVuCiAgCQkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KChjaG9pY2UgYXMgRkhJUi5SYW5nZSkubG93KSwKICAJCQkgIEZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KChjaG9pY2UgYXMgRkhJUi5SYW5nZSkuaGlnaCkgKyAxIHllYXIpCiAgCQl3aGVuIGNob2ljZSBpcyBGSElSLlRpbWluZyB0aGVuCiAgCQkgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoKGNob2ljZSBhcyBGSElSLlRpbWluZykuZXZlbnQpLCBGSElSSGVscGVycy5Ub0RhdGVUaW1lKChjaG9pY2UgYXMgRkhJUi5UaW1pbmcpLmV2ZW50KV0KICAgIHdoZW4gY2hvaWNlIGlzIEZISVIuc3RyaW5nIHRoZW4KICAgICAgTWVzc2FnZShudWxsIGFzIEludGVydmFsPERhdGVUaW1lPiwgdHJ1ZSwgJzEnLCAnRXJyb3InLCAnQ2Fubm90IGNvbXB1dGUgYW4gaW50ZXJ2YWwgZnJvbSBhIFN0cmluZyB2YWx1ZScpCiAgCQllbHNlCiAgCQkJbnVsbCBhcyBJbnRlcnZhbDxEYXRlVGltZT4KICAJZW5k"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/Library/FHIRHelpers",
+      "resource": {
+        "resourceType": "Library",
+        "id": "FHIRHelpers",
+        "url": "http://www.hl7.org/fhir/us/mihr/Library/FHIRHelpers",
+        "version": "4.0.001",
+        "name": "FHIRHelpers",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "logic-library",
+              "display": "logic-library"
+            }
+          ]
+        },
+        "content": [
+          {
+            "contentType": "text/cql",
+            "data": "bGlicmFyeSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMDAxJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmNvbnRleHQgUGF0aWVudAoKZGVmaW5lIGZ1bmN0aW9uICJUb0ludGVydmFsIihwZXJpb2QgRkhJUi5QZXJpb2QgKToKICBpZiBwZXJpb2QgaXMgbnVsbCB0aGVuCiAgICAgICAgbnVsbAogICAgZWxzZQogICAgICAgIEludGVydmFsW3BlcmlvZC4ic3RhcnQiLnZhbHVlLCBwZXJpb2QuImVuZCIudmFsdWVdCgpkZWZpbmUgZnVuY3Rpb24gIlRvUXVhbnRpdHkiKHF1YW50aXR5IEZISVIuUXVhbnRpdHkgKToKICBpZiBxdWFudGl0eSBpcyBudWxsIHRoZW4KICAgICAgICBudWxsCiAgICBlbHNlCiAgICAgICAgU3lzdGVtLlF1YW50aXR5IHsgdmFsdWU6IHF1YW50aXR5LnZhbHVlLnZhbHVlLCB1bml0OiBxdWFudGl0eS51bml0LnZhbHVlIH0KCmRlZmluZSBmdW5jdGlvbiAiVG9SYXRpbyIocmF0aW8gRkhJUi5SYXRpbyApOgogIGlmIHJhdGlvIGlzIG51bGwgdGhlbgogICAgICAgIG51bGwKICAgIGVsc2UKICAgICAgICBTeXN0ZW0uUmF0aW8geyBudW1lcmF0b3I6IFRvUXVhbnRpdHkocmF0aW8ubnVtZXJhdG9yKSwgZGVub21pbmF0b3I6IFRvUXVhbnRpdHkocmF0aW8uZGVub21pbmF0b3IpIH0KCmRlZmluZSBmdW5jdGlvbiAiVG9JbnRlcnZhbCIocmFuZ2UgRkhJUi5SYW5nZSApOgogIGlmIHJhbmdlIGlzIG51bGwgdGhlbgogICAgICAgIG51bGwKICAgIGVsc2UKICAgICAgICBJbnRlcnZhbFtUb1F1YW50aXR5KHJhbmdlLmxvdyksIFRvUXVhbnRpdHkocmFuZ2UuaGlnaCldCgpkZWZpbmUgZnVuY3Rpb24gIlRvQ29kZSIoY29kaW5nIEZISVIuQ29kaW5nICk6CiAgaWYgY29kaW5nIGlzIG51bGwgdGhlbgogICAgICAgIG51bGwKICAgIGVsc2UKICAgICAgICBTeXN0ZW0uQ29kZSB7CiAgICAgICAgICBjb2RlOiBjb2RpbmcuY29kZS52YWx1ZSwKICAgICAgICAgIHN5c3RlbTogY29kaW5nLnN5c3RlbS52YWx1ZSwKICAgICAgICAgIHZlcnNpb246IGNvZGluZy52ZXJzaW9uLnZhbHVlLAogICAgICAgICAgZGlzcGxheTogY29kaW5nLmRpc3BsYXkudmFsdWUKICAgICAgICB9CgpkZWZpbmUgZnVuY3Rpb24gIlRvQ29uY2VwdCIoY29uY2VwdCBGSElSLkNvZGVhYmxlQ29uY2VwdCApOgogIGlmIGNvbmNlcHQgaXMgbnVsbCB0aGVuCiAgICAgICAgbnVsbAogICAgZWxzZQogICAgICAgIFN5c3RlbS5Db25jZXB0IHsKICAgICAgICAgICAgY29kZXM6IGNvbmNlcHQuY29kaW5nIEMgcmV0dXJuIFRvQ29kZShDKSwKICAgICAgICAgICAgZGlzcGxheTogY29uY2VwdC50ZXh0LnZhbHVlCiAgICAgICAgfQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWNjb3VudFN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBY3Rpb25DYXJkaW5hbGl0eUJlaGF2aW9yICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEFjdGlvbkNvbmRpdGlvbktpbmQgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWN0aW9uR3JvdXBpbmdCZWhhdmlvciApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBY3Rpb25QYXJ0aWNpcGFudFR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWN0aW9uUHJlY2hlY2tCZWhhdmlvciApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBY3Rpb25SZWxhdGlvbnNoaXBUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEFjdGlvblJlcXVpcmVkQmVoYXZpb3IgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWN0aW9uU2VsZWN0aW9uQmVoYXZpb3IgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWN0aXZpdHlEZWZpbml0aW9uS2luZCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBY3Rpdml0eVBhcnRpY2lwYW50VHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBZGRyZXNzVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBZGRyZXNzVXNlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEFkbWluaXN0cmF0aXZlR2VuZGVyICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEFkdmVyc2VFdmVudEFjdHVhbGl0eSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBZ2dyZWdhdGlvbk1vZGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWxsZXJneUludG9sZXJhbmNlQ2F0ZWdvcnkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWxsZXJneUludG9sZXJhbmNlQ3JpdGljYWxpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWxsZXJneUludG9sZXJhbmNlU2V2ZXJpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQWxsZXJneUludG9sZXJhbmNlVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBcHBvaW50bWVudFN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBc3NlcnRpb25EaXJlY3Rpb25UeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEFzc2VydGlvbk9wZXJhdG9yVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBBc3NlcnRpb25SZXNwb25zZVR5cGVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEF1ZGl0RXZlbnRBY3Rpb24gKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQXVkaXRFdmVudEFnZW50TmV0d29ya1R5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQXVkaXRFdmVudE91dGNvbWUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQmluZGluZ1N0cmVuZ3RoICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEJpb2xvZ2ljYWxseURlcml2ZWRQcm9kdWN0Q2F0ZWdvcnkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQmlvbG9naWNhbGx5RGVyaXZlZFByb2R1Y3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQmlvbG9naWNhbGx5RGVyaXZlZFByb2R1Y3RTdG9yYWdlU2NhbGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQnVuZGxlVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDYXBhYmlsaXR5U3RhdGVtZW50S2luZCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDYXJlUGxhbkFjdGl2aXR5S2luZCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDYXJlUGxhbkFjdGl2aXR5U3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENhcmVQbGFuSW50ZW50ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENhcmVQbGFuU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENhcmVUZWFtU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENhdGFsb2dFbnRyeVJlbGF0aW9uVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDaGFyZ2VJdGVtRGVmaW5pdGlvblByaWNlQ29tcG9uZW50VHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDaGFyZ2VJdGVtU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENsYWltUmVzcG9uc2VTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ2xhaW1TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ2xpbmljYWxJbXByZXNzaW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvZGVTZWFyY2hTdXBwb3J0ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvZGVTeXN0ZW1Db250ZW50TW9kZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb2RlU3lzdGVtSGllcmFyY2h5TWVhbmluZyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb21tdW5pY2F0aW9uUHJpb3JpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29tbXVuaWNhdGlvblJlcXVlc3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29tbXVuaWNhdGlvblN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb21wYXJ0bWVudENvZGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29tcGFydG1lbnRUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvbXBvc2l0aW9uQXR0ZXN0YXRpb25Nb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvbXBvc2l0aW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvbmNlcHRNYXBFcXVpdmFsZW5jZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb25jZXB0TWFwR3JvdXBVbm1hcHBlZE1vZGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29uZGl0aW9uYWxEZWxldGVTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29uZGl0aW9uYWxSZWFkU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvbnNlbnREYXRhTWVhbmluZyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb25zZW50UHJvdmlzaW9uVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb25zZW50U3RhdGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29uc3RyYWludFNldmVyaXR5ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIENvbnRhY3RQb2ludFN5c3RlbSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb250YWN0UG9pbnRVc2UgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ29udHJhY3RQdWJsaWNhdGlvblN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb250cmFjdFN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBDb250cmlidXRvclR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ292ZXJhZ2VTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgQ3VycmVuY3lDb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERheU9mV2VlayApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBEYXlzT2ZXZWVrICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldGVjdGVkSXNzdWVTZXZlcml0eSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBEZXRlY3RlZElzc3VlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldmljZU1ldHJpY0NhbGlicmF0aW9uU3RhdGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRGV2aWNlTWV0cmljQ2FsaWJyYXRpb25UeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldmljZU1ldHJpY0NhdGVnb3J5ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldmljZU1ldHJpY0NvbG9yICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldmljZU1ldHJpY09wZXJhdGlvbmFsU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldmljZU5hbWVUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERldmljZVJlcXVlc3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRGV2aWNlVXNlU3RhdGVtZW50U3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERpYWdub3N0aWNSZXBvcnRTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRGlzY3JpbWluYXRvclR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRG9jdW1lbnRDb25maWRlbnRpYWxpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRG9jdW1lbnRNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERvY3VtZW50UmVmZXJlbmNlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIERvY3VtZW50UmVsYXRpb25zaGlwVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFbGlnaWJpbGl0eVJlcXVlc3RQdXJwb3NlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEVsaWdpYmlsaXR5UmVxdWVzdFN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFbGlnaWJpbGl0eVJlc3BvbnNlUHVycG9zZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFbGlnaWJpbGl0eVJlc3BvbnNlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEVuYWJsZVdoZW5CZWhhdmlvciApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFbmNvdW50ZXJMb2NhdGlvblN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFbmNvdW50ZXJTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRW5kcG9pbnRTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRW5yb2xsbWVudFJlcXVlc3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRW5yb2xsbWVudFJlc3BvbnNlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEVwaXNvZGVPZkNhcmVTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRXZlbnRDYXBhYmlsaXR5TW9kZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFdmVudFRpbWluZyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFdmlkZW5jZVZhcmlhYmxlVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFeGFtcGxlU2NlbmFyaW9BY3RvclR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRXhwbGFuYXRpb25PZkJlbmVmaXRTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRXhwb3N1cmVTdGF0ZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBFeHRlbnNpb25Db250ZXh0VHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBGSElSQWxsVHlwZXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRkhJUkRlZmluZWRUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEZISVJEZXZpY2VTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRkhJUlJlc291cmNlVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBGSElSU3Vic3RhbmNlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEZISVJWZXJzaW9uICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEZhbWlseUhpc3RvcnlTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRmlsdGVyT3BlcmF0b3IgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgRmxhZ1N0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBHb2FsTGlmZWN5Y2xlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEdyYXBoQ29tcGFydG1lbnRSdWxlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEdyYXBoQ29tcGFydG1lbnRVc2UgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgR3JvdXBNZWFzdXJlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEdyb3VwVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBHdWlkYW5jZVJlc3BvbnNlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEd1aWRlUGFnZUdlbmVyYXRpb24gKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgR3VpZGVQYXJhbWV0ZXJDb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIEhUVFBWZXJiICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIElkZW50aWZpZXJVc2UgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgSWRlbnRpdHlBc3N1cmFuY2VMZXZlbCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBJbWFnaW5nU3R1ZHlTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgSW1tdW5pemF0aW9uRXZhbHVhdGlvblN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBJbW11bml6YXRpb25TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgSW52b2ljZVByaWNlQ29tcG9uZW50VHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBJbnZvaWNlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIElzc3VlU2V2ZXJpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgSXNzdWVUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIExpbmtUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIExpbmthZ2VUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIExpc3RNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIExpc3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTG9jYXRpb25Nb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIExvY2F0aW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIE1lYXN1cmVSZXBvcnRTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTWVhc3VyZVJlcG9ydFR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTWVkaWFTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTWVkaWNhdGlvbkFkbWluaXN0cmF0aW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIE1lZGljYXRpb25EaXNwZW5zZVN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBNZWRpY2F0aW9uS25vd2xlZGdlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIE1lZGljYXRpb25SZXF1ZXN0SW50ZW50ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIE1lZGljYXRpb25SZXF1ZXN0UHJpb3JpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTWVkaWNhdGlvblJlcXVlc3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTWVkaWNhdGlvblN0YXRlbWVudFN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBNZWRpY2F0aW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIE1lc3NhZ2VTaWduaWZpY2FuY2VDYXRlZ29yeSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBNZXNzYWdlaGVhZGVyX1Jlc3BvbnNlX1JlcXVlc3QgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTWltZVR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTmFtZVVzZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBOYW1pbmdTeXN0ZW1JZGVudGlmaWVyVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBOYW1pbmdTeXN0ZW1UeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIE5hcnJhdGl2ZVN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBOb3RlVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBOdXRyaXRpaW9uT3JkZXJJbnRlbnQgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgTnV0cml0aW9uT3JkZXJTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgT2JzZXJ2YXRpb25EYXRhVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBPYnNlcnZhdGlvblJhbmdlQ2F0ZWdvcnkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgT2JzZXJ2YXRpb25TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgT3BlcmF0aW9uS2luZCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBPcGVyYXRpb25QYXJhbWV0ZXJVc2UgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgT3JpZW50YXRpb25UeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFBhcmFtZXRlclVzZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBQYXJ0aWNpcGFudFJlcXVpcmVkICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFBhcnRpY2lwYW50U3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFBhcnRpY2lwYXRpb25TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUGF5bWVudE5vdGljZVN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBQYXltZW50UmVjb25jaWxpYXRpb25TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUHJvY2VkdXJlU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFByb3BlcnR5UmVwcmVzZW50YXRpb24gKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUHJvcGVydHlUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFByb3ZlbmFuY2VFbnRpdHlSb2xlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFB1YmxpY2F0aW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFF1YWxpdHlUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFF1YW50aXR5Q29tcGFyYXRvciApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBRdWVzdGlvbm5haXJlSXRlbU9wZXJhdG9yICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFF1ZXN0aW9ubmFpcmVJdGVtVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBRdWVzdGlvbm5haXJlUmVzcG9uc2VTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUmVmZXJlbmNlSGFuZGxpbmdQb2xpY3kgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUmVmZXJlbmNlVmVyc2lvblJ1bGVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFJlZmVycmVkRG9jdW1lbnRTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUmVsYXRlZEFydGlmYWN0VHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBSZW1pdHRhbmNlT3V0Y29tZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBSZXBvc2l0b3J5VHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBSZXF1ZXN0SW50ZW50ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFJlcXVlc3RQcmlvcml0eSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBSZXF1ZXN0U3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFJlc2VhcmNoRWxlbWVudFR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUmVzZWFyY2hTdHVkeVN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBSZXNlYXJjaFN1YmplY3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUmVzb3VyY2VUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFJlc291cmNlVmVyc2lvblBvbGljeSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBSZXNwb25zZVR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgUmVzdGZ1bENhcGFiaWxpdHlNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFJpc2tBc3Nlc3NtZW50U3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFNQRFhMaWNlbnNlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFNlYXJjaENvbXBhcmF0b3IgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU2VhcmNoRW50cnlNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFNlYXJjaE1vZGlmaWVyQ29kZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBTZWFyY2hQYXJhbVR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU2VjdGlvbk1vZGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU2VxdWVuY2VUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFNlcnZpY2VSZXF1ZXN0SW50ZW50ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFNlcnZpY2VSZXF1ZXN0UHJpb3JpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU2VydmljZVJlcXVlc3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU2xpY2luZ1J1bGVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFNsb3RTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU29ydERpcmVjdGlvbiApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBTcGVjaW1lbkNvbnRhaW5lZFByZWZlcmVuY2UgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3BlY2ltZW5TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFN0cmFuZFR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3RydWN0dXJlRGVmaW5pdGlvbktpbmQgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3RydWN0dXJlTWFwQ29udGV4dFR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3RydWN0dXJlTWFwR3JvdXBUeXBlTW9kZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBTdHJ1Y3R1cmVNYXBJbnB1dE1vZGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3RydWN0dXJlTWFwTW9kZWxNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFN0cnVjdHVyZU1hcFNvdXJjZUxpc3RNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFN0cnVjdHVyZU1hcFRhcmdldExpc3RNb2RlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFN0cnVjdHVyZU1hcFRyYW5zZm9ybSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBTdWJzY3JpcHRpb25DaGFubmVsVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBTdWJzY3JpcHRpb25TdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3VwcGx5RGVsaXZlcnlTdGF0dXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgU3VwcGx5UmVxdWVzdFN0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBTeXN0ZW1SZXN0ZnVsSW50ZXJhY3Rpb24gKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVGFza0ludGVudCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBUYXNrUHJpb3JpdHkgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVGFza1N0YXR1cyApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBUZXN0UmVwb3J0QWN0aW9uUmVzdWx0ICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFRlc3RSZXBvcnRQYXJ0aWNpcGFudFR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVGVzdFJlcG9ydFJlc3VsdCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBUZXN0UmVwb3J0U3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFRlc3RTY3JpcHRSZXF1ZXN0TWV0aG9kQ29kZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBUcmlnZ2VyVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBUeXBlRGVyaXZhdGlvblJ1bGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVHlwZVJlc3RmdWxJbnRlcmFjdGlvbiApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBVRElFbnRyeVR5cGUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVW5pdHNPZlRpbWUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVXNlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFZhcmlhYmxlVHlwZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBWaXNpb25CYXNlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFZpc2lvbkV5ZXMgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgVmlzaW9uU3RhdHVzICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIFhQYXRoVXNhZ2VUeXBlICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIGJhc2U2NEJpbmFyeSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBpZCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvQm9vbGVhbiIodmFsdWUgYm9vbGVhbiApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvRGF0ZSIodmFsdWUgZGF0ZSApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvRGF0ZVRpbWUiKHZhbHVlIGRhdGVUaW1lICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9EZWNpbWFsIih2YWx1ZSBkZWNpbWFsICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9EYXRlVGltZSIodmFsdWUgaW5zdGFudCApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvSW50ZWdlciIodmFsdWUgaW50ZWdlciApOgogIHZhbHVlLnZhbHVlCgpkZWZpbmUgZnVuY3Rpb24gIlRvU3RyaW5nIih2YWx1ZSBzdHJpbmcgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1RpbWUiKHZhbHVlIHRpbWUgKToKICB2YWx1ZS52YWx1ZQoKZGVmaW5lIGZ1bmN0aW9uICJUb1N0cmluZyIodmFsdWUgdXJpICk6CiAgdmFsdWUudmFsdWUKCmRlZmluZSBmdW5jdGlvbiAiVG9TdHJpbmciKHZhbHVlIHhodG1sICk6CiAgdmFsdWUudmFsdWU="
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/ValueSet/pregnancy-chronic-hypertension-mmm-ICD",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "pregnancy-chronic-hypertension-mmm-ICD",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2021-11-22T14:48:17.043+00:00",
+          "source": "#n3m1wAoeCH22vvpR"
+        },
+        "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-chronic-hypertension-mmm-ICD",
+        "name": "Pregnancyinducedhypertensionmmmicd",
+        "title": "Pregnancyinducedhypertensionmmmicd",
+        "status": "draft",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "concept": [
+                {
+                  "code": "O10.211",
+                  "display": "Pre-existing hypertensive chronic kidney disease complicating pregnancy, first trimester"
+                },
+                {
+                  "code": "O10.212",
+                  "display": "Pre-existing hypertensive chronic kidney disease complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O10.213",
+                  "display": "Pre-existing hypertensive chronic kidney disease complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O10.219",
+                  "display": "Pre-existing hypertensive chronic kidney disease complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O10.22",
+                  "display": "Pre-existing hypertensive chronic kidney disease complicating childbirth"
+                },
+                {
+                  "code": "O10.23",
+                  "display": "Pre-existing hypertensive chronic kidney disease complicating the puerperium"
+                },
+                {
+                  "code": "O10.311",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease complicating pregnancy, first trimester"
+                },
+                {
+                  "code": "O10.312",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O10.313",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O10.319",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O10.32",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease complicating childbirth"
+                },
+                {
+                  "code": "O10.33",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease complicating the puerperium"
+                },
+                {
+                  "code": "O10.01",
+                  "display": "Pre-existing essential hypertension complicating pregnancy,"
+                },
+                {
+                  "code": "O10.011",
+                  "display": "Pre-existing essential hypertension complicating pregnancy, first trimester"
+                },
+                {
+                  "code": "O10.012",
+                  "display": "Pre-existing essential hypertension complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O10.013",
+                  "display": "Pre-existing essential hypertension complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O10.019",
+                  "display": "Pre-existing essential hypertension complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O10.11",
+                  "display": "Pre-existing hypertensive heart disease complicating pregnancy"
+                },
+                {
+                  "code": "O10.111",
+                  "display": "Pre-existing hypertensive heart disease complicating pregnancy, first trimester"
+                },
+                {
+                  "code": "O10.112",
+                  "display": "Pre-existing hypertensive heart disease complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O10.113",
+                  "display": "Pre-existing hypertensive heart disease complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O10.41",
+                  "display": "Pre-existing secondary hypertension complicating pregnancy"
+                },
+                {
+                  "code": "O10.411",
+                  "display": "Pre-existing secondary hypertension complicating pregnancy, first trimester"
+                },
+                {
+                  "code": "O10.412",
+                  "display": "Pre-existing secondary hypertension complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O10.413",
+                  "display": "Pre-existing secondary hypertension complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O10.419",
+                  "display": "Pre-existing secondary hypertension complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O10.91",
+                  "display": "Unspecified pre-existing hypertension complicating pregnancy"
+                },
+                {
+                  "code": "O10.911",
+                  "display": "Unspecified pre-existing hypertension complicating pregnancy, first trimester"
+                },
+                {
+                  "code": "O10.912",
+                  "display": "Unspecified pre-existing hypertension complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O10.913",
+                  "display": "Unspecified pre-existing hypertension complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O10.919",
+                  "display": "Unspecified pre-existing hypertension complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O11",
+                  "display": "Pre-existing hypertension with pre-eclampsia"
+                },
+                {
+                  "code": "O11.1",
+                  "display": "Pre-existing hypertension with pre-eclampsia, first trimester"
+                },
+                {
+                  "code": "O11.2",
+                  "display": "Pre-existing hypertension with pre-eclampsia, second trimester"
+                },
+                {
+                  "code": "O11.3",
+                  "display": "Pre-existing hypertension with pre-eclampsia, third trimester"
+                },
+                {
+                  "code": "O11.9",
+                  "display": "Pre-existing hypertension with pre-eclampsia, unspecified trimester"
+                },
+                {
+                  "code": "O10.03",
+                  "display": "Pre-existing essential hypertension complicating the puerperium"
+                },
+                {
+                  "code": "O10.42",
+                  "display": "Pre-existing secondary hypertension complicating childbirth"
+                },
+                {
+                  "code": "O10.43",
+                  "display": "Pre-existing secondary hypertension complicating the puerperium"
+                },
+                {
+                  "code": "O10.92",
+                  "display": "Unspecified pre-existing hypertension complicating childbirth"
+                },
+                {
+                  "code": "O10.93",
+                  "display": "Unspecified pre-existing hypertension complicating the puerperium"
+                },
+                {
+                  "code": "O10.02",
+                  "display": "Pre-existing essential hypertension complicating childbirth"
+                },
+                {
+                  "code": "O10.119",
+                  "display": "Pre-existing hypertensive heart disease complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O10.12",
+                  "display": "Pre-existing hypertensive heart disease complicating childbirth"
+                },
+                {
+                  "code": "O10.13",
+                  "display": "Pre-existing hypertensive heart disease complicating the puerperium"
+                },
+                {
+                  "code": "O13.4",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria, complicating childbirth"
+                },
+                {
+                  "code": "O13.5",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria, complicating the puerperium"
+                },
+                {
+                  "code": "O14.24",
+                  "display": "HELLP syndrome, complicating childbirth"
+                },
+                {
+                  "code": "O14.25",
+                  "display": "HELLP syndrome, complicating the puerperium"
+                },
+                {
+                  "code": "O16.4",
+                  "display": "Unspecified maternal hypertension, complicating childbirth"
+                },
+                {
+                  "code": "O16.5",
+                  "display": "Unspecified maternal hypertension, complicating the puerperium"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/ValueSet/pregnancy-chronic-hypertension-mmm-SNOMED",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "pregnancy-chronic-hypertension-mmm-SNOMED",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2021-11-22T14:45:19.974+00:00",
+          "source": "#oWwJD50F3ybzUyks"
+        },
+        "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-chronic-hypertension-mmm-SNOMED",
+        "name": "Pregnancychronichypertensionmmmsnomed",
+        "title": "Pregnancychronichypertensionmmmsnomed",
+        "status": "draft",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "24042004",
+                  "display": "Chronic hypertension complicating AND/OR reason for care during puerperium (disorder)"
+                },
+                {
+                  "code": "37618003",
+                  "display": "Chronic hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "8218002",
+                  "display": "Chronic hypertension complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "8762007",
+                  "display": "Chronic hypertension in obstetric context (disorder)"
+                },
+                {
+                  "code": "71874008",
+                  "display": "Benign essential hypertension complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "72022006",
+                  "display": "Essential hypertension in obstetric context (disorder)"
+                },
+                {
+                  "code": "75150001",
+                  "display": "Renal disease in pregnancy AND/OR puerperium without hypertension (disorder)"
+                },
+                {
+                  "code": "765182005",
+                  "display": "Pre-eclampsia in puerperium (disorder)"
+                },
+                {
+                  "code": "78808002",
+                  "display": "Essential hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "79355007",
+                  "display": "Hypertensive heart disease in obstetric context (disorder)"
+                },
+                {
+                  "code": "81626002",
+                  "display": "Malignant hypertension in obstetric context (disorder)"
+                },
+                {
+                  "code": "82771000119102",
+                  "display": "Hypertension complicating pregnancy (disorder)"
+                },
+                {
+                  "code": "10757481000119107",
+                  "display": "Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy (disorder)"
+                },
+                {
+                  "code": "118781000119108",
+                  "display": "Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy (disorder)"
+                },
+                {
+                  "code": "10562009",
+                  "display": "Malignant hypertension complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "106005003",
+                  "display": "Hypertension AND/OR vomiting complicating pregnancy childbirth AND/OR puerperium (disorder)"
+                },
+                {
+                  "code": "1474004",
+                  "display": "Hypertensive heart AND renal disease complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "18416000",
+                  "display": "Essential hypertension complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "198942000",
+                  "display": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium (disorder)"
+                },
+                {
+                  "code": "198944004",
+                  "display": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium - delivered (disorder)"
+                },
+                {
+                  "code": "198945003",
+                  "display": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium - delivered with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198946002",
+                  "display": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium - not delivered (disorder)"
+                },
+                {
+                  "code": "198947006",
+                  "display": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198949009",
+                  "display": "Renal hypertension complicating pregnancy, childbirth and the puerperium (disorder)"
+                },
+                {
+                  "code": "198951008",
+                  "display": "Renal hypertension complicating pregnancy, childbirth and the puerperium - delivered (disorder)"
+                },
+                {
+                  "code": "198952001",
+                  "display": "Renal hypertension complicating pregnancy, childbirth and the puerperium - delivered with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198953006",
+                  "display": "Renal hypertension complicating pregnancy, childbirth and the puerperium - not delivered (disorder)"
+                },
+                {
+                  "code": "20753005",
+                  "display": "Hypertensive heart disease complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "22966008",
+                  "display": "Hypertensive heart AND renal disease complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "23717007",
+                  "display": "Benign essential hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "23786008",
+                  "display": "Malignant hypertension complicating AND/OR reason for care during puerperium (disorder)"
+                },
+                {
+                  "code": "26078007",
+                  "display": "Hypertension secondary to renal disease complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "34273003",
+                  "display": "Hypertensive heart disease complicating AND/OR reason for care during puerperium (disorder)"
+                },
+                {
+                  "code": "39727004",
+                  "display": "Hypertension secondary to renal disease complicating AND/OR reason for care during puerperium (disorder)"
+                },
+                {
+                  "code": "48552006",
+                  "display": "Hypertension secondary to renal disease complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "541000119105",
+                  "display": "Hypertension complicating pregnancy, childbirth and the puerperium, antepartum (disorder)"
+                },
+                {
+                  "code": "57873008",
+                  "display": "Hypertensive renal disease complicating AND/OR reason for care during puerperium (disorder)"
+                },
+                {
+                  "code": "59733002",
+                  "display": "Hypertensive heart disease complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "66709007",
+                  "display": "Hypertensive renal disease complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "9901000",
+                  "display": "Essential hypertension complicating AND/OR reason for care during puerperium (disorder)"
+                },
+                {
+                  "code": "29259002",
+                  "display": "Malignant hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "65402008",
+                  "display": "Pre-existing hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+                },
+                {
+                  "code": "10759031000119106",
+                  "display": "Pre-existing hypertensive heart disease in mother complicating pregnancy (disorder)"
+                },
+                {
+                  "code": "49171007",
+                  "display": "Hypertensive renal disease complicating AND/OR reason for care during childbirth (disorder)"
+                },
+                {
+                  "code": "199006004",
+                  "display": "Pre-existing hypertensive heart disease complicating pregnancy, childbirth and the puerperium (disorder)"
+                },
+                {
+                  "code": "199007008",
+                  "display": "Pre-existing hypertensive heart and renal disease complicating pregnancy, childbirth and the puerperium (disorder)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/ValueSet/pregnancy-eclampsia-mmm-ICD",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "pregnancy-eclampsia-mmm-ICD",
+        "meta": {
+          "versionId": "6",
+          "lastUpdated": "2021-11-22T14:47:04.848+00:00",
+          "source": "#939J1Xxeh1G7fkwk"
+        },
+        "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-eclampsia-mmm-ICD",
+        "name": "Pregnancyeclampsiammmicd",
+        "title": "Pregnancyeclampsiammmicd",
+        "status": "draft",
+        "description": "This value set includes terms related to eclampsia diagnosed during the course of pregnancy.",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "concept": [
+                {
+                  "code": "O14.00",
+                  "display": "Mild to moderate pre-eclampsia, unspecified trimester"
+                },
+                {
+                  "code": "O14.02",
+                  "display": "Mild to moderate pre-eclampsia, second trimester"
+                },
+                {
+                  "code": "O14.03",
+                  "display": "Mild to moderate pre-eclampsia, third trimester"
+                },
+                {
+                  "code": "O14.04",
+                  "display": "Mild to moderate pre-eclampsia, complicating childbirth"
+                },
+                {
+                  "code": "O14.05",
+                  "display": "Mild to moderate pre-eclampsia, complicating the puerperium"
+                },
+                {
+                  "code": "O14.10",
+                  "display": "Severe pre-eclampsia, unspecified trimester"
+                },
+                {
+                  "code": "O14.12",
+                  "display": "Severe pre-eclampsia, second trimester"
+                },
+                {
+                  "code": "O14.13",
+                  "display": "Severe pre-eclampsia, third trimester"
+                },
+                {
+                  "code": "O14.14",
+                  "display": "Severe pre-eclampsia complicating childbirth"
+                },
+                {
+                  "code": "O14.15",
+                  "display": "Severe pre-eclampsia, complicating the puerperium"
+                },
+                {
+                  "code": "O14.90",
+                  "display": "Unspecified pre-eclampsia, unspecified trimester"
+                },
+                {
+                  "code": "O14.92",
+                  "display": "Unspecified pre-eclampsia, second trimester"
+                },
+                {
+                  "code": "O14.93",
+                  "display": "Unspecified pre-eclampsia, third trimester"
+                },
+                {
+                  "code": "O14.94",
+                  "display": "Unspecified pre-eclampsia, complicating childbirth"
+                },
+                {
+                  "code": "O14.95",
+                  "display": "Unspecified pre-eclampsia, complicating the puerperium"
+                },
+                {
+                  "code": "O15.00",
+                  "display": "Eclampsia complicating pregnancy, unspecified trimester"
+                },
+                {
+                  "code": "O15.02",
+                  "display": "Eclampsia complicating pregnancy, second trimester"
+                },
+                {
+                  "code": "O15.03",
+                  "display": "Eclampsia complicating pregnancy, third trimester"
+                },
+                {
+                  "code": "O15.1",
+                  "display": "Eclampsia complicating labor"
+                },
+                {
+                  "code": "O15.2",
+                  "display": "Eclampsia complicating the puerperium"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/ValueSet/pregnancy-eclampsia-mmm-SNOMED",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "pregnancy-eclampsia-mmm-SNOMED",
+        "meta": {
+          "versionId": "6",
+          "lastUpdated": "2021-11-22T14:47:30.884+00:00",
+          "source": "#1sVdIlCS3aZAuBpO"
+        },
+        "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-eclampsia-mmm-SNOMED",
+        "name": "Pregnancyeclampsiammmsnomed",
+        "title": "Pregnancyeclampsiammmsnomed",
+        "status": "draft",
+        "description": "This value set includes terms related to eclampsia diagnosed during the course of pregnancy.",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "10752641000119102",
+                  "display": "Eclampsia with pre-existing hypertension in childbirth (disorder)"
+                },
+                {
+                  "code": "15938005",
+                  "display": "Eclampsia (disorder)"
+                },
+                {
+                  "code": "198983002",
+                  "display": "Severe pre-eclampsia - delivered (disorder)"
+                },
+                {
+                  "code": "198984008",
+                  "display": "Severe pre-eclampsia - delivered with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198985009",
+                  "display": "Severe pre-eclampsia - not delivered (disorder)"
+                },
+                {
+                  "code": "198986005",
+                  "display": "Severe pre-eclampsia with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198990007",
+                  "display": "Eclampsia - delivered (disorder)"
+                },
+                {
+                  "code": "198991006",
+                  "display": "Eclampsia - delivered with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198992004",
+                  "display": "Eclampsia in pregnancy (disorder)"
+                },
+                {
+                  "code": "198993009",
+                  "display": "Eclampsia with postnatal complication (disorder)"
+                },
+                {
+                  "code": "198997005",
+                  "display": "Pre-eclampsia or eclampsia with pre-existing hypertension (disorder)"
+                },
+                {
+                  "code": "198999008",
+                  "display": "Pre-eclampsia or eclampsia with pre-existing hypertension - delivered (disorder)"
+                },
+                {
+                  "code": "199000005",
+                  "display": "Pre-eclampsia or eclampsia with pre-existing hypertension - delivered with postnatal complication (disorder)"
+                },
+                {
+                  "code": "199002002",
+                  "display": "Pre-eclampsia or eclampsia with pre-existing hypertension - not delivered (disorder)"
+                },
+                {
+                  "code": "199003007",
+                  "display": "Pre-eclampsia or eclampsia with pre-existing hypertension with postnatal complication (disorder)"
+                },
+                {
+                  "code": "237282002",
+                  "display": "Impending eclampsia (disorder)"
+                },
+                {
+                  "code": "237283007",
+                  "display": "Eclampsia in labor (disorder)"
+                },
+                {
+                  "code": "303063000",
+                  "display": "Eclampsia in puerperium (disorder)"
+                },
+                {
+                  "code": "398254007",
+                  "display": "Pre-eclampsia (disorder)"
+                },
+                {
+                  "code": "41114007",
+                  "display": "Mild pre-eclampsia (disorder)"
+                },
+                {
+                  "code": "46764007",
+                  "display": "Severe pre-eclampsia (disorder)"
+                },
+                {
+                  "code": "69909000",
+                  "display": "Eclampsia added to pre-existing hypertension (disorder)"
+                },
+                {
+                  "code": "765182005",
+                  "display": "Pre-eclampsia in puerperium (disorder)"
+                },
+                {
+                  "code": "67359005",
+                  "display": "Pre-eclampsia added to pre-existing hypertension (disorder)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/ValueSet/pregnancy-induced-hypertension-mmm-ICD",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "pregnancy-induced-hypertension-mmm-ICD",
+        "meta": {
+          "versionId": "5",
+          "lastUpdated": "2021-11-22T14:46:16.748+00:00",
+          "source": "#4UN8rELk0YPVqJYV"
+        },
+        "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-induced-hypertension-mmm-ICD",
+        "name": "Pregnancyinducedhypertensionmmmicd",
+        "title": "Pregnancyinducedhypertensionmmmicd",
+        "status": "draft",
+        "description": "This value set includes terms related to hypertension diagnosed during the course of pregnancy.",
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "concept": [
+                {
+                  "code": "O13",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria"
+                },
+                {
+                  "code": "O13.1",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria, first trimester"
+                },
+                {
+                  "code": "O13.2",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria, second trimester"
+                },
+                {
+                  "code": "O13.3",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria, third trimester"
+                },
+                {
+                  "code": "O13.9",
+                  "display": "Gestational [pregnancy-induced] hypertension without significant proteinuria, unspecified trimester"
+                },
+                {
+                  "code": "O16",
+                  "display": "Unspecified maternal hypertension"
+                },
+                {
+                  "code": "O16.1",
+                  "display": "Unspecified maternal hypertension, first trimester"
+                },
+                {
+                  "code": "O16.2",
+                  "display": "Unspecified maternal hypertension, second trimester"
+                },
+                {
+                  "code": "O16.3",
+                  "display": "Unspecified maternal hypertension, third trimester"
+                },
+                {
+                  "code": "O16.9",
+                  "display": "Unspecified maternal hypertension, unspecified trimester"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://clyde.lantanagroup.com/ValueSet/pregnancy-induced-hypertension-mmm-SNOMED",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "pregnancy-induced-hypertension-mmm-SNOMED",
+        "meta": {
+          "versionId": "14",
+          "lastUpdated": "2021-11-22T14:49:03.868+00:00",
+          "source": "#ZOizY0ugxYDhpwHz"
+        },
+        "url": "http://www.hl7.org/fhir/us/mihr/ValueSet/pregnancy-induced-hypertension-mmm-SNOMED",
+        "name": "Pregnancyinducedhypertensionmmmsnomed",
+        "title": "Pregnancyinducedhypertensionmmmsnomed",
+        "status": "draft",
+        "description": "This value set includes terms related to hypertension diagnosed during the course of pregnancy.",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "199139003",
+                  "display": "Pregnancy-induced edema and proteinuria without hypertension (disorder)"
+                },
+                {
+                  "code": "237281009",
+                  "display": "Moderate proteinuric hypertension of pregnancy (disorder)"
+                },
+                {
+                  "code": "288250001",
+                  "display": "Maternal hypertension (disorder)"
+                },
+                {
+                  "code": "307632004",
+                  "display": "Non-proteinuric hypertension of pregnancy (disorder)"
+                },
+                {
+                  "code": "367390009",
+                  "display": "Hypertension in the obstetric context (disorder)"
+                },
+                {
+                  "code": "48194001",
+                  "display": "Pregnancy-induced hypertension (disorder)"
+                },
+                {
+                  "code": "49102001",
+                  "display": "Hypertensive heart AND renal disease in obstetric context (disorder)"
+                },
+                {
+                  "code": "63287004",
+                  "display": "Benign essential hypertension in obstetric context (disorder)"
+                },
+                {
+                  "code": "698638005",
+                  "display": "Pregnancy induced hypertension with pulmonary edema (disorder)"
+                },
+                {
+                  "code": "698640000",
+                  "display": "Hypertension in the puerperium with pulmonary edema (disorder)"
+                },
+                {
+                  "code": "72022006",
+                  "display": "Essential hypertension in obstetric context (disorder)"
+                },
+                {
+                  "code": "73030000",
+                  "display": "Hypertensive renal disease in obstetric context (disorder)"
+                },
+                {
+                  "code": "79355007",
+                  "display": "Hypertensive heart disease in obstetric context (disorder)"
+                },
+                {
+                  "code": "81626002",
+                  "display": "Malignant hypertension in obstetric context (disorder)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
